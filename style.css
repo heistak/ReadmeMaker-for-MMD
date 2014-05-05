@@ -19,6 +19,9 @@ ul ul {
 ul#input li {
 	line-height: 1.5em;
 }
+label span:lang(en) {
+	display: none;
+}
 input[type="checkbox"]{
 	margin: auto 5px;
 	height: 2em;

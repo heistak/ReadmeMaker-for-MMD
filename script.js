@@ -26,16 +26,21 @@ $(document).ready(function(){
 	// チェックを反映
 	$('#save').click(function(){
 		// アウトプット欄を初期化
-		$('#output').find('p').text('');
+		$('#output').find('p.term-content').text('');
 		// チェックボックスを取得してアウトプット
 		for(var i=0; i<$('#input').find('input').length; i++){
-			var text = $('#input').find('input:eq('+i+')').parent('label').text();
+			var text_ja = $('#input').find('input:eq('+i+')').siblings('span:lang(ja)').text();
+			var text_en = $('#input').find('input:eq('+i+')').siblings('span:lang(en)').text();
 			if($('#input').find('input:eq('+i+')').is(':checked')){
-				$('#output-pt-ok').append('・'+text+'<br>');
-				$('#output-md-ok').append('* '+text+'<br>');
+				$('#output-pt-ok-ja').append('・'+text_ja+'<br>');
+				$('#output-md-ok-ja').append('* '+text_ja+'<br>');
+				$('#output-pt-ok-en').append('* '+text_en+'<br>');
+				$('#output-md-ok-en').append('* '+text_en+'<br>');
 			} else {
-				$('#output-pt-ng').append('・'+text+'<br>');
-				$('#output-md-ng').append('* '+text+'<br>');
+				$('#output-pt-ng-ja').append('・'+text_ja+'<br>');
+				$('#output-md-ng-ja').append('* '+text_ja+'<br>');
+				$('#output-pt-ng-en').append('* '+text_en+'<br>');
+				$('#output-md-ng-en').append('* '+text_en+'<br>');
 			}
 		}
 	});

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
 	<title>ReadmeMaker for MMD</title>
@@ -10,73 +10,168 @@
 <body>
 	<h1>ReadmeMaker for MMD</h1>
 	<p>MMD関連配布物のReadme(主に許可・禁止事項)をつくるためのチェックリスト<br>
-	   やってもいいこと(許可事項)にチェックを入れて、SAVEボタンでテキストに出力できます。プレーンテキスト(テキストファイル向け)とマークダウン、お好きな方をお選びください。<br>
-	   githubのリポジトリは<a href="https://github.com/monsier-oui/ReadmeMaker-for-MMD">ここ</a>です。</p>
-	<ul id="input">
-		<p>利用について</p>
-		<li><label><input type="checkbox" class="term" />公序良俗に反する表現、利用</label></li>
-		<li><label><input type="checkbox" class="term" />架空・実在問わず特定人物への誹謗中傷・侮辱のための表現、利用</label></li>
-		<li><label><input type="checkbox" class="term" />他者を政治的・宗教的に扇動するための表現、利用</label></li>
-		<li><label><input type="checkbox" class="term"/>商用利用</label></li>
-		<li><label><input type="checkbox" class="term"/>同人活動(同人アニメ、同人誌、同人ゲームなど)での利用</label></li>
-		<li><label><input type="checkbox" class="term"/>成人向け作品への利用</label></li>
-		<li><label><input type="checkbox" class="term"/>MMD以外のソフトウェアでの利用</label></li>
-		<li><label><input type="checkbox" class="term"/>特定パーツの他モデルへの流用</label></li>
-		
-		<p>表現について</p>
-		<li><label><input type="checkbox" class="term-parent"/>性描写</label>
-			<ul>
-				<li><label><input type="checkbox" class="term"/>成人向け性描写</label></li>
-				<li><label><input type="checkbox" class="term"/>成人向けではないが過度な性描写</label>
-				<li><label><input type="checkbox" class="term"/>子供向け(いわゆる少年誌レベルの)性描写</label>
-			</ul>
-		</li>
-		<li><label><input type="checkbox" class="term"/>成人向け暴力描写</label></li>
-		<li><label><input type="checkbox" class="term"/>暴力描写</label></li>
-		<li><label><input type="checkbox" class="term"/>原作の設定を著しく逸脱した描写</label></li>
-		<li><label><input type="checkbox" class="term-parent"/>改造・改変</label>
-			<ul>
-				<li><label><input type="checkbox" class="term"/>大きさの変更</label></li>
-				<li><label><input type="checkbox" class="term"/>特定パーツのサイズ変更</label></li>
-				<li><label><input type="checkbox" class="term"/>特定パーツの色変更</label></li>
-				<li><label><input type="checkbox" class="term"/>テクスチャ変更</label>
-				<li><label><input type="checkbox" class="term"/>モーフ追加</label>
-				<li><label><input type="checkbox" class="term"/>自作パーツの追加、または自作パーツへの変更</label></li>
-				<li><label><input type="checkbox" class="term"/>配布パーツの追加、または配布パーツへの変更</label></li>
-			</ul>
-		</li>
-		
-		<p>再配布について</p>
-		<li><label><input type="checkbox" class="term-parent"/>再配布</label>
-			<ul>
-				<li><label><input type="checkbox" class="term"/>改変をしない状態での再配布</label></li>
-				<li><label><input type="checkbox" class="term"/>改変してからの配布</label></li>
-				<li><label><input type="checkbox" class="term"/>自作モデルなどと同梱しての再配布</label></li>
-			</ul>
-		</li>
-	</ul>
+		やってもいいこと(許可事項)にチェックを入れて、SAVEボタンでテキストに出力できます。プレーンテキスト(テキストファイル向け)とマークダウン、お好きな方をお選びください。<br>
+		githubのリポジトリは<a href="https://github.com/monsier-oui/ReadmeMaker-for-MMD">ここ</a>です。</p>
+		<ul id="input">
+			<p>利用について</p>
+			<li><label><input type="checkbox" class="term" />
+				<span lang="ja">公序良俗に反する表現、利用</span>
+				<span lang="en">Use the work in offensive and/or immoral content</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">架空・実在問わず特定人物への誹謗中傷・侮辱のための表現、利用</span>
+				<span lang="en">Use the work for defaming and/or slandering individuals, regardless of whether the individual is real or fictional</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">他者を政治的・宗教的に扇動するための表現、利用</span>
+				<span lang="en">Use the work for inciting and/or instigating others with political and/or religious intents</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">商用利用</span>
+				<span lang="en">Use the work commercially</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">同人活動(同人アニメ、同人誌、同人ゲームなど)での利用</span>
+				<span lang="en">Use the work in self-published <em>dojin</em> work, eg. Dojin animé, dojinshi, dojin games</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">成人向け作品への利用</span>
+				<span lang="en">Use the work in adult content</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">MMD以外のソフトウェアでの利用</span>
+				<span lang="en">Use the work in software other than MikuMikuDance</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">特定パーツの他モデルへの流用</span>
+				<span lang="en">Reuse part of the work in another model</span>
+			</label></li>
 
-	<button type="button" id="save">SAVE</button>
-	
-	<ul id="output">
-		<li class="tab">
-			<a href="#" class="is-active tab-link">Plain Text</a>
-			<section>
-				【やってもいいこと】
-				<p id="output-pt-ok"></p>
-				【やっちゃだめなこと】
-				<p id="output-pt-ng"></p>	
-			</section>
+			<p>表現について</p>
+			<li><label><input type="checkbox" class="term-parent"/>
+				<span lang="ja">性描写</span>
+				<span lang="en">Use the model to depict sexual content</span>
+			</label>
+			<ul>
+				<li><label><input type="checkbox" class="term"/>
+					<span lang="ja">成人向け性描写</span>
+					<span lang="en">Use the model to depict mature adult sexual content</span>
+				</label></li>
+				<li><label><input type="checkbox" class="term"/>
+					<span lang="ja">成人向けではないが過度な性描写</span>
+					<span lang="en">Use the model in non-adult-rated, but excessive, sexual depiction</span>
+				</label>
+				<li><label><input type="checkbox" class="term"/>
+					<span lang="ja">子供向け(いわゆる少年誌レベルの)性描写</span>
+					<span lang="en">Use the model in minors-friendly (PG-13) level of sexual depiction</span>
+				</label>
+			</ul>
 		</li>
-		<li class="tab">
-			<a href="#" class="tab-link">Markdown</a>
-			<section>
-				#やってもいいこと
-				<p id="output-md-ok"></p>
-				#やっちゃだめなこと
-				<p id="output-md-ng"></p>
-			</section>
-		</li>
+		<li><label><input type="checkbox" class="term"/>
+			<span lang="ja">成人向け暴力描写</span>
+			<span lang="en">Use the model to depict mature violence inappropriate for minors</span>
+		</label></li>
+		<li><label><input type="checkbox" class="term"/>
+			<span lang="ja">暴力描写</span>
+			<span lang="en">Use the model to depict violence</span>
+		</label></li>
+		<li><label><input type="checkbox" class="term"/>
+			<span lang="ja">原作の設定を著しく逸脱した描写</span>
+			<span lang="en">Use the model to depict content that diverges significantly from the source material</span>
+		</label></li>
+		<li><label><input type="checkbox" class="term-parent"/>
+			<span lang="ja">改造・改変</span>
+			<span lang="en">Show modified versions of the work</span>
+		</label>
+		<ul>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">大きさの変更</span>
+				<span lang="en">Change the size of the entire model</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">特定パーツのサイズ変更</span>
+				<span lang="en">Change the size of specific parts of the model</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">特定パーツの色変更</span>
+				<span lang="en">Change the color of specific parts of the model</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">テクスチャ変更</span>
+				<span lang="en">Change the textures</span>
+			</label>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">モーフ追加</span>
+				<span lang="en">Add new morphs</span>
+			</label>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">自作パーツの追加、または自作パーツへの変更</span>
+				<span lang="en">Add new parts and/or replace existing parts using a model part you made yourself</span>
+			</label></li>
+			<li><label><input type="checkbox" class="term"/>
+				<span lang="ja">配布パーツの追加、または配布パーツへの変更</span>
+				<span lang="en">Add new parts and/or replace existing parts using a publicly-distributed model part</span>
+			</label></li>
+		</ul>
+	</li>
+
+	<p>再配布について</p>
+	<li><label><input type="checkbox" class="term-parent"/>
+		<span lang="ja">再配布</span>
+		<span lang="en">Redistribute the work</span>
+	</label>
+	<ul>
+		<li><label><input type="checkbox" class="term"/>
+			<span lang="ja">改変をしない状態での再配布</span>
+			<span lang="en">Redistribute the work in an unmodified state</span>
+		</label></li>
+		<li><label><input type="checkbox" class="term"/>
+			<span lang="ja">改変してからの配布</span>
+			<span lang="en">Redistribute the work with modifications</span>
+		</label></li>
+		<li><label><input type="checkbox" class="term"/>
+			<span lang="ja">自作モデルなどと同梱しての再配布</span>
+			<span lang="en">Redistribute the work bundled with other works, such as another model the distributor created herself</span>
+		</label></li>
 	</ul>
+</li>
+</ul>
+
+<button type="button" id="save">SAVE</button>
+
+<ul id="output">
+	<li class="tab">
+		<a href="#" class="is-active tab-link">Plain Text</a>
+		<section>
+			<p>English follows.</p>
+			【やってもいいこと】
+			<p id="output-pt-ok-ja" class="term-content"></p>
+			【やっちゃだめなこと】
+			<p id="output-pt-ng-ja" class="term-content"></p>
+			<p>以下、英語版（日本語と英語の表記に食い違いがある場合、日本語版が、そして究極的には作者の意向が優先します）</p>
+			<p>This is an English translation of the above terms. In the case where the Japanese and English versions contradict each other, the Japanese version (and ultimately, the author's wishes) prevails.</p>
+			You may use the work in the following manner:
+			<p id="output-pt-ok-en" class="term-content"></p>
+			You may NOT use the work in the following manner:
+			<p id="output-pt-ng-en" class="term-content"></p>
+		</section>
+	</li>
+	<li class="tab">
+		<a href="#" class="tab-link">Markdown</a>
+		<section>
+			<p>English follows.</p>
+			#やってもいいこと
+			<p id="output-md-ok-ja" class="term-content"></p>
+			#やっちゃだめなこと
+			<p id="output-md-ng-ja" class="term-content"></p>
+			<p>以下、英語版（日本語と英語の表記に食い違いがある場合、日本語版が、そして究極的には作者の意向が優先します）</p>
+			<p>This is an English translation of the above terms. In the case where the Japanese and English versions contradict each other, the Japanese version (and ultimately, the author's wishes) prevails.</p>
+			#You may use the work in the following manner:
+			<p id="output-md-ok-en" class="term-content"></p>
+			#You may NOT use the work in the following manner:
+			<p id="output-md-ng-en" class="term-content"></p>
+		</section>
+	</li>
+</ul>
 </body>
 </html>
